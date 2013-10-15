@@ -83,6 +83,10 @@
             "selfLink": { 
                 "type": "string", 
                 "description": "The URL of the comments on this post."
+            },
+            "items[]": { 
+                "type": "list", 
+                "description": "The list of comments for this post."
             }
         },
         "labels[]": { 
@@ -93,26 +97,22 @@
             "type": "string", 
             "description": "The JSON metadata for the post."
         },
-        "replies.items[]": { 
-            "type": "list", 
-            "description": "The list of comments for this post."
-        },
         "location": { 
             "type": "object", 
             "description": "The location, if this post is geotagged.", 
-            "type": "name": { 
+            "name": { 
                 "type": "string", 
                 "description": "Location name."
             },
-            "type": "lat": { 
+            "lat": { 
                 "type": "double", 
                 "description": "Location's latitude." 
             },
-            "type": "lng": { 
+            "lng": { 
                 "type": "double", 
                 "description": "Location's longitude." 
             },
-            "type": "span": { 
+            "span": { 
                 "type": "string", 
                 "description": "Location's viewport span. Can be used when rendering a map preview."
             }

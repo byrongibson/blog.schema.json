@@ -7,10 +7,13 @@ blog.schema.json
 
 ## Fixme
 
-1.  Make datatypes JSON Schema compliant (long -> integer, datetime -> ?, etc)
-2.  Add "required": [] properties 
+1.  Make datatypes [JSON Schema compliant][3] (long -> integer, list -> ?, datetime -> ?, etc)
+    - list:string or list:array?
+    - datetime:string or datetime:integer (eg a Unix epoch int?) 
+2.  Add "required": [] property where necessary
 3.  Fill in examples
 4.  Run through a validator
 
 [1]:    http://json-schema.org/
 [2]:    https://developers.google.com/blogger/docs/3.0/json/reference/
+[3]:    http://json-schema.org/latest/json-schema-core.html#anchor8
