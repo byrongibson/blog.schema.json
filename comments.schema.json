@@ -1,0 +1,81 @@
+{
+    "title": "Comments Schema",
+    "description": "The comments for a posts.schema.json resource.", 
+    "docs": [],
+    "refs": ["http://json-schema.org/", "https://developers.google.com/blogger/docs/3.0/json/reference/comments"],
+    "type": "object",
+    "properties": {
+        "kind": {
+            "type": "string", 
+            "description": "The kind of this resource. Always comments.schema.json."
+        },
+        "id": { 
+            "type": "long", 
+            "description": "The ID for this resource." 
+        },
+        "post": { 
+            "type": "object", 
+            "description": "Data about the post containing this comment.", 
+            "id": { 
+                "type": "long", 
+                "description": "The identifier of the post containing this comment." 
+            }
+        },
+        "blog": { 
+            "type": "object", 
+            "description": "Data about the blog containing this comment",.
+            "id": { 
+                "type": "long", 
+                "description": "The identifier of the blog containing this comment." 
+            }
+        },
+        "published": { 
+            "type": "datetime", 
+            "description": "RFC 3339 date-time date-time when this comment was published, for example '2012-04-15T19:38:01-07:00'."
+        },
+        "updated": { 
+            "type": "datetime", 
+            "description": "RFC 3339 date-time when this comment was last updated, for example '2012-04-15T19:43:21-07:00'."
+        },
+        "selfLink": { 
+            "type": "string", 
+            "description": "The Blogger API URL to fetch this resource from." 
+        },
+        "content": { 
+            "type": "string", 
+            "description": "The content of the comment, which can include HTML markup." 
+        },
+        "author": { 
+            "type": "object", 
+            "description": "The author of this comment.", 
+            "id": { 
+                "type": "string", 
+                "description": "The identifier of the comment creator." 
+            },
+            "displayName": { 
+                "type": "string", 
+                "description": "The comment creator's display name." 
+            },
+            "url": { 
+                "type": "string", 
+                "description": "The URL of the comment creator's profile page." 
+            },
+            "image": { 
+                "type": "object", 
+                "description": "The container for the creator's avatar URL." 
+                "url": { 
+                    "type": "string", 
+                    "description": "The URL of the comment creator's avatar image." 
+                }
+            }
+        },
+        "inReplyTo": { 
+            "type": "object", 
+            "description": "Data about the comment this is in reply to.",
+            "id": { 
+                "type": "long", 
+                "description": "The ID of the parent of this comment."
+            }
+        }
+    }
+}

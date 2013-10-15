@@ -1,0 +1,80 @@
+{
+    "title": "Blog Schema",
+    "description": "A Blog is the root data class. Each blog has a series of Posts and Pages, and each Post has a series of Comments.  Blogs, Posts, Pages, and Comments are all owned by Users",
+    "docs": [],
+    "refs": ["http://json-schema.org/", "https://developers.google.com/blogger/docs/3.0/json/reference/blogs"],
+    "type": "object",
+    "properties": {
+        "kind": {
+            "type": "string",
+            "description": "The kind of this entry. Always blog.schema.json."
+        "id": { 
+            "type": "long", 
+            "description": "The identifier for this resource." 
+        "name": { 
+            "type": "string",
+            "description": "The name of this blog. This is usually displayed in Blogger as the blog's title. May include HTML."
+        "description": { 
+            "type": "string",
+            "description": "The description of this blog. This is usually displayed in Blogger underneath the blog's title. May include HTML."
+        "published": { 
+            "type": "datetime", 
+            "description": "RFC 3339 date-time when this blog was published."
+        "updated": { 
+            "type": "datetime",
+            "description": "RFC 3339 date-time when this blog was last updated."
+        "url": { 
+            "type": "string",
+            "description": "The URL where this blog is published."
+        "selfLink": { 
+            "type": "string",
+            "description": "The API REST URL to fetch this resource from."
+        "posts": { 
+            "type": "object",
+            "description": "The container for this blog's posts."
+            "totalItems": {
+                "type": "integer ",
+                "description": "The total number of posts on this blog."
+            },
+            "selfLink": { 
+                "type": "string",
+                "description": "The URL of the Posts Collection for this blog."
+            },
+            "items[]": { 
+                "type": "list",
+                "description": "The list of posts for this Blog."
+            }
+        },
+        "pages": { 
+            "type": "object",
+            "description": "The container for this blog's pages.",
+            "totalItems": {
+                "type": "integer", 
+                "description": "The total number of pages for this blog."
+            },
+            "selfLink": {
+                "type": "string",
+                "description": "The URL of the Pages collection for this blog."
+            },
+        "locale": { 
+            "type": "object",
+            "description": "The locale this blog is set to.",
+            "language": { 
+                "type": "string",
+                "description": "The language this blog is authored in."
+            },
+            "country": {
+                "type": "string",
+                "description": "The country this blog's locale is set to."
+            },
+            "variant": {
+                "type": "string",
+                "description": "The language variant this blog is authored in."
+            }
+        },
+        "customMetaData": {
+            "type": "string",
+            "description": "The JSON custom metadata for the blog"
+        }
+    }
+}
