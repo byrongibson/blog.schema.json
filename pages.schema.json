@@ -15,7 +15,7 @@
         },
         "blog": {
             "type": "object",
-            "description": "Data about the blog containing this page."
+            "description": "Data about the blog containing this page.",
             "id": { 
                 "type": "integer",
                 "description": "The identifier of the blog containing this page."    
@@ -62,7 +62,7 @@
             },
             "image": {
                 "type": "object",
-                "description": "The page creator's avatar." 
+                "description": "The page creator's avatar.",
                 "url": {
                     "type": "string",
                     "description": "The page creator's avatar URL."
