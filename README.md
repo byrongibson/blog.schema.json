@@ -7,13 +7,14 @@ blog.schema.json
 
 ## Fixme
 
-1.  Make datatypes [JSON Schema compliant][3] 
+1.  Make into a Gruntjs project for easy access to utilities (validation, etc)
+2.  Make datatypes [JSON Schema compliant][3] 
     - list -> string, or list -> array?
     - datetime -> string, or datetime -> integer (eg a Unix epoch int?) 
     - long -> integer
-2.  Add "required": [] property where necessary
-3.  Fill in examples
-4.  Run through a validator
+3.  Add "required": [] property where necessary
+4.  Fill in examples
+5.  Run through a validator
 
 [1]:    http://json-schema.org/
 [2]:    https://developers.google.com/blogger/docs/3.0/json/reference/
