@@ -9,6 +9,10 @@
             "type": "string", 
             "description": "The kind of this resource. Always comments.schema.json."
         },
+        "schema": {
+            "type": "string",
+            "description": "URL of the schema, ex: https://raw.github.com/byrongibson/blog.schema.json/master/comments.schema.json"
+        },
         "id": { 
             "type": "long", 
             "description": "The ID for this resource." 

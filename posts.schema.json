@@ -9,6 +9,10 @@
             "type": "string",
             "description": "The kind of this entity. Always posts.schema.json."
         },
+        "schema": {
+            "type": "string",
+            "description": "URL of the schema, ex: https://raw.github.com/byrongibson/blog.schema.json/master/posts.schema.json"             
+        },
         "id": { 
             "type": "long", 
             "description": "The identifier of this post." 

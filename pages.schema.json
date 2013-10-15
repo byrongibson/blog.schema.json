@@ -9,6 +9,10 @@
             "type": "string",
             "description": "The kind of this entity. Always page.schema."
         },
+        "schema": {
+            "type": "string",
+            "description": "URL of the schema, ex: https://raw.github.com/byrongibson/blog.schema.json/master/pages.schema.json" 
+        },
         "id": {
             "type": "integer",
             "description": "The identifier for this resource."
