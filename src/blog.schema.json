@@ -43,7 +43,7 @@
         },
         "posts": { 
             "type": "object",
-            "description": "The container for this blog's posts."
+            "description": "The container for this blog's posts.",
             "totalItems": {
                 "type": "integer ",
                 "description": "The total number of posts on this blog."
