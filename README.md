@@ -7,9 +7,9 @@ blog.schema.json
 
 ## Fixme
 
-1.  Make datatypes [JSON Schema compliant][3] (long -> integer, list -> ?, datetime -> ?, etc)
-    - list:string or list:array?
-    - datetime:string or datetime:integer (eg a Unix epoch int?) 
+1.  Make datatypes [JSON Schema compliant][3] 
+    - list -> string or list -> array?
+    - datetime -> string or datetime -> integer (eg a Unix epoch int?) 
 2.  Add "required": [] property where necessary
 3.  Fill in examples
 4.  Run through a validator
