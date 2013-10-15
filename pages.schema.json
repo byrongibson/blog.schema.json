@@ -16,10 +16,10 @@
         "blog": {
             "type": "object",
             "description": "Data about the blog containing this page."
-        },
-        "blog.id": { 
-            "type": "integer",
-            "description": "The identifier of the blog containing this page."    
+            "id": { 
+                "type": "integer",
+                "description": "The identifier of the blog containing this page."    
+            }
         },
         "published": {
             "type": "datetime",

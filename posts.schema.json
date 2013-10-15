@@ -1,6 +1,6 @@
 {
     "title": "Posts Schema",
-    "description": "Posts contain the content of a blog post.  May contain HTML/Markdown/BBCode, etc."
+    "description": "Posts contain the content of a blog post.  May contain HTML/Markdown/BBCode, etc.",
     "docs": [],
     "refs": ["http://json-schema.org/", "https://developers.google.com/blogger/docs/3.0/json/reference/posts"],
     "type": "object",
@@ -15,7 +15,7 @@
         },
         "blog": { 
             "type": "object", 
-            "description": "Data about the blog containing this post." 
+            "description": "Data about the blog containing this post.",
             "id": { 
                 "type": "long", 
                 "description": "The identifier of the blog that contains this post."
@@ -51,7 +51,7 @@
         },
         "author": { 
             "type": "object", 
-            "description": "The author of this post."
+            "description": "The author of this post.",
             "id": { 
                 "type": "string", 
                 "description": "The identifier of the post creator."
@@ -66,7 +66,7 @@
             },
             "image": { 
                 "type": "object", 
-                "description": "The post creator's avatar."
+                "description": "The post creator's avatar.",
                 "url": { 
                     "type": "string", 
                     "description": "The post creator's avatar URL."
@@ -75,7 +75,7 @@
         },
         "replies": { 
             "type": "object", 
-            "description": "The container for this post's comments."
+            "description": "The container for this post's comments.",
             "totalItems": { 
                 "type": "long", 
                 "description": "The total number of comments on this post."

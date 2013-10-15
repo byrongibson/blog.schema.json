@@ -8,27 +8,35 @@
         "kind": {
             "type": "string",
             "description": "The kind of this entry. Always blog.schema.json."
+        },
         "id": { 
             "type": "long", 
             "description": "The identifier for this resource." 
+        },
         "name": { 
             "type": "string",
             "description": "The name of this blog. This is usually displayed in Blogger as the blog's title. May include HTML."
+        },
         "description": { 
             "type": "string",
             "description": "The description of this blog. This is usually displayed in Blogger underneath the blog's title. May include HTML."
+        },
         "published": { 
             "type": "datetime", 
             "description": "RFC 3339 date-time when this blog was published."
+        },
         "updated": { 
             "type": "datetime",
             "description": "RFC 3339 date-time when this blog was last updated."
+        },
         "url": { 
             "type": "string",
             "description": "The URL where this blog is published."
+        },
         "selfLink": { 
             "type": "string",
             "description": "The API REST URL to fetch this resource from."
+        },
         "posts": { 
             "type": "object",
             "description": "The container for this blog's posts."
@@ -55,7 +63,8 @@
             "selfLink": {
                 "type": "string",
                 "description": "The URL of the Pages collection for this blog."
-            },
+            }
+        },
         "locale": { 
             "type": "object",
             "description": "The locale this blog is set to.",
